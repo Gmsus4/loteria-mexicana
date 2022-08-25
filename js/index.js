@@ -1,12 +1,13 @@
 const cards = [];
 class Cartas {
-  constructor(name, url) {
+  constructor(name, url, audio) {
     this.name = name;
     this.url = url;
+    this.audio = audio;
   }
 }
 
-const elGallo = new Cartas('EL GALLO', 'https://1.bp.blogspot.com/-iQjXVrBMhN0/YUKJ80ry5iI/AAAAAAAAHMM/VRoYL5DT_cwQLsC7yWVy00Z7WsUgfCZnACLcBGAsYHQ/w202-h320/1%2Bel%2Bgallo-min.jpg');
+/* const elGallo = new Cartas('EL GALLO', 'https://1.bp.blogspot.com/-iQjXVrBMhN0/YUKJ80ry5iI/AAAAAAAAHMM/VRoYL5DT_cwQLsC7yWVy00Z7WsUgfCZnACLcBGAsYHQ/w202-h320/1%2Bel%2Bgallo-min.jpg');
 const elDiablito = new Cartas('EL DIABLITO', 'https://1.bp.blogspot.com/-pnkkLKH8q4E/YUKKIDqiVMI/AAAAAAAAHMw/GXdMrhY5zGAM2B63soguZ2IlvJjgAHwkgCLcBGAsYHQ/w202-h320/2%2Bel%2Bdiablito-min.jpg');
 const laDama = new Cartas('LA DAMA', 'https://1.bp.blogspot.com/-W7xBNE-nrfI/YUKKaN9BcOI/AAAAAAAAHNo/VQMpSZn1xKYYZhLkttD6YBRbG9SyaPtAgCLcBGAsYHQ/w202-h320/3%2Bla%2Bdama-min.jpg');
 const elCatrin = new Cartas('EL CATRIN', 'https://1.bp.blogspot.com/-Z_IZF9I1KKI/YUKKq95H7UI/AAAAAAAAHOc/brJ8Y-B85t0wDrXPpzjYv3eAzcsUUEE_wCLcBGAsYHQ/w202-h320/4%2Bel%2Bcatrin-min.jpg');
@@ -59,7 +60,63 @@ const elPescado = new Cartas('EL PESCADO', 'https://1.bp.blogspot.com/-blJRGNm83
 const laPalma = new Cartas('LA PALMA', 'https://1.bp.blogspot.com/-Quu5Y5iO3Ms/YUKK_KytYfI/AAAAAAAAHPY/WZkCku6uoaIB9jJLSk8OaPAudU7-uMpIACLcBGAsYHQ/w202-h320/51%2Bla%2Bpalma-min.jpg');
 const laMaseta = new Cartas('LA MASETA', 'https://1.bp.blogspot.com/-V0EK-hXsFpI/YUKK_g3_5SI/AAAAAAAAHPc/pYImBSg3GYobKXxtC7vx9jV81Zk5RvffgCLcBGAsYHQ/w202-h320/52%2Bla%2Bmaceta-min.jpg');
 const elArpa = new Cartas('EL ARPA', 'https://1.bp.blogspot.com/-JPWPCcK3_bk/YUKLBWFs_vI/AAAAAAAAHPg/5bkt-XUYQsAQ24xBSs5iHJA74-1Zdlj-QCLcBGAsYHQ/w202-h320/53%2Bel%2Barpa-min.jpg');
-const laRana = new Cartas('LA RANA', 'https://1.bp.blogspot.com/-qXzoXc2RZBw/YUKLDvI0HdI/AAAAAAAAHPk/i_FIDvgrihAWqJyM2tL7uZCvhg5GfHdUQCLcBGAsYHQ/w202-h320/54%2Bla%2Brana-min.jpg');
+const laRana = new Cartas('LA RANA', 'https://1.bp.blogspot.com/-qXzoXc2RZBw/YUKLDvI0HdI/AAAAAAAAHPk/i_FIDvgrihAWqJyM2tL7uZCvhg5GfHdUQCLcBGAsYHQ/w202-h320/54%2Bla%2Brana-min.jpg'); */
+
+const elGallo = new Cartas('EL GALLO', '../img/1.webp','../audios/francisco/1.mp3');
+const elDiablito = new Cartas('EL DIABLITO', '../img/2.webp','../audios/francisco/2.mp3');
+const laDama = new Cartas('LA DAMA', '../img/3.webp','../audios/francisco/3.mp3');
+const elCatrin = new Cartas('EL CATRIN', '../img/4.webp','../audios/francisco/4.mp3');
+const elParaguas = new Cartas('EL PARAGUAS', '../img/5.webp','../audios/francisco/5.mp3');
+const laSirena = new Cartas('LA SIRENA', '../img/6.webp','../audios/francisco/6.mp3');
+const laEscalera = new Cartas('LA ESCALERA', '../img/7.webp','../audios/francisco/7.mp3');
+const laBotella = new Cartas('LA BOTELLA', '../img/8.webp','../audios/francisco/8.mp3');
+const elBarril = new Cartas('EL BARRIL', '../img/9.webp','../audios/francisco/9.mp3');
+const elArbol = new Cartas('EL ARBOL', '../img/10.webp','../audios/francisco/10.mp3');
+const elMelon = new Cartas('EL MELON', '../img/11.webp','../audios/francisco/11.mp3');
+const elValiente = new Cartas('EL VALIENTE', '../img/12.webp','../audios/francisco/12.mp3');
+const elGorrito = new Cartas('EL GORRITO', '../img/13.webp','../audios/francisco/13.mp3');
+const laMuerte = new Cartas('LA MUERTE', '../img/14.webp','../audios/francisco/14.mp3');
+const laPera = new Cartas('LA PERA', '../img/15.webp','../audios/francisco/15.mp3');
+const laBandera = new Cartas('LA BANDERA', '../img/16.webp','../audios/francisco/16.mp3');
+const elBandolon = new Cartas('EL BANDOLON', '../img/17.webp','../audios/francisco/17.mp3');
+const elVioloncello = new Cartas('EL VIOLONCELLO', '../img/18.webp','../audios/francisco/18.mp3');
+const laGarza = new Cartas('LA GARZA', '../img/19.webp','../audios/francisco/19.mp3');
+const elPajaro = new Cartas('EL PAJARO', '../img/20.webp','../audios/francisco/20.mp3');
+const laMano = new Cartas('LA MANO', '../img/21.webp','../audios/francisco/21.mp3');
+const laBota = new Cartas('LA BOTA', '../img/22.webp','../audios/francisco/22.mp3');
+const laLuna = new Cartas('LA LUNA', '../img/23.webp','../audios/francisco/23.mp3');
+const elCotorro = new Cartas('EL COTORRO', '../img/24.webp','../audios/francisco/24.mp3');
+const elBorracho = new Cartas('EL BORRACHO', '../img/25.webp','../audios/francisco/25.mp3');
+const elNegrito = new Cartas('EL NEGRITO', '../img/26.webp','../audios/francisco/26.mp3');
+const elCorazon = new Cartas('EL CORAZON', '../img/27.webp','../audios/francisco/27.mp3');
+const laSandia = new Cartas('LA SANDIA', '../img/28.webp','../audios/francisco/28.mp3');
+const elTambor = new Cartas('EL TAMBOR', '../img/29.webp','../audios/francisco/29.mp3');
+const elCamaron = new Cartas('EL CAMARON', '../img/30.webp','../audios/francisco/30.mp3');
+const lasJaras = new Cartas('LAS JARAS', '../img/31.webp','../audios/francisco/31.mp3');
+const elMusico = new Cartas('EL MUSICO', '../img/32.webp','../audios/francisco/32.mp3');
+const laArana = new Cartas('LA ARAÑA', '../img/33.webp','../audios/francisco/33.mp3');
+const elSoldado = new Cartas('EL SOLDADO', '../img/34.webp','../audios/francisco/34.mp3');
+const laEstrella = new Cartas('LA ESTRELLA', '../img/35.webp','../audios/francisco/35.mp3');
+const elCazo = new Cartas('EL CAZO', '../img/36.webp','../audios/francisco/36.mp3');
+const elMundo = new Cartas('EL MUNDO', '../img/37.webp','../audios/francisco/37.mp3');
+const elApache = new Cartas('EL APACHE', '../img/38.webp','../audios/francisco/38.mp3');
+const elNopal = new Cartas('EL NOPAL', '../img/39.webp','../audios/francisco/39.mp3');
+const elAlacran = new Cartas('EL ALACRAN', '../img/40.webp','../audios/francisco/40.mp3');
+const laRosa = new Cartas('LA ROSA', '../img/41.webp','../audios/francisco/41.mp3');
+const laCalavera = new Cartas('LA CALAVERA', '../img/42.webp','../audios/francisco/42.mp3');
+const laCampana = new Cartas('LA CAMPANA', '../img/43.webp','../audios/francisco/43.mp3');
+const elCantarito = new Cartas('EL CANTARITO', '../img/44.webp','../audios/francisco/44.mp3');
+const elVenado = new Cartas('EL VENADO', '../img/45.webp','../audios/francisco/45.mp3');
+const elSol = new Cartas('EL SOL', '../img/46.webp','../audios/francisco/46.mp3');
+const laCorona = new Cartas('LA CORONA', '../img/47.webp','../audios/francisco/47.mp3');
+const laChalupa = new Cartas('LA CHALUPA', '../img/48.webp','../audios/francisco/48.mp3');
+const elPino = new Cartas('EL PINO', '../img/49.webp','../audios/francisco/49.mp3');
+const elPescado = new Cartas('EL PESCADO', '../img/50.webp','../audios/francisco/50.mp3');
+const laPalma = new Cartas('LA PALMA', '../img/51.webp','../audios/francisco/51.mp3');
+const laMaseta = new Cartas('LA MACETA', '../img/52.webp','../audios/francisco/52.mp3');
+const elArpa = new Cartas('EL ARPA', '../img/53.webp','../audios/francisco/53.mp3');
+const laRana = new Cartas('LA RANA', '../img/54.webp','../audios/francisco/54.mp3');
+const etiquetaAudio = document.createElement("audio");
 
 const randomButton = document.querySelector('.random');
 const carta = document.querySelector('.carta');
@@ -89,6 +146,12 @@ cards.sort(function() {return Math.random() - 0.5});
 randomButton.addEventListener('click',(startRandom));
 reboot.addEventListener('click',(rebootPage));
 
+function playAudio(audio){
+  etiquetaAudio.pause();
+  etiquetaAudio.setAttribute("src", audio);
+  etiquetaAudio.play();
+}
+
 function rebootPage(){
     location.reload();
 }
@@ -101,10 +164,12 @@ function startRandom() {
     reboot.style.display = 'block';
   } else {
     //carta.innerHTML = cards[count].name;
+    console.log(count);
     restantes--;
     carta.innerHTML = `Cartas restantes: ${restantes}`;
     img.src = cards[count].url;
     console.log(cards[count]);
+    playAudio(cards[count].audio);
     count++;
   }
 }
