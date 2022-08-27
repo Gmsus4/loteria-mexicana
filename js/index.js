@@ -11,9 +11,9 @@ class Cartas {
 
 //Colores
 const amarillo = '#fffe1a';
-const azul = '../img/fondoAzul.jpg';
-const rosa = '../img/fondoRosa.jpg';
-const azulCeleste = '../img/fondoAzul_celeste.jpg';
+const azul = './img/fondoAzul.jpg';
+const rosa = './img/fondoRosa.jpg';
+const azulCeleste = './img/fondoAzul_celeste.jpg';
 const white = '#FFFDFF';
 
 const elGallo = new Cartas('EL GALLO', '../img/1.webp','../audios/francisco/1.mp3', `${azulCeleste}`);
