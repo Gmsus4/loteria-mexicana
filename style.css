@@ -88,9 +88,9 @@ button:hover{
   padding: 10px 40px;
 }
 
-.height{
+/* .height{
   height: auto !important;
-}
+} */
 
 @media (max-width: 480px){
     .list-card{
