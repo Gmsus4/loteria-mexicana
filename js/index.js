@@ -122,6 +122,7 @@ const randomButton = document.querySelector('.random');
 const carta = document.querySelector('.carta');
 const img = document.querySelector('.img');
 const reboot = document.querySelector('.reboot');
+const listCard = document.querySelector('.list-card');
 reboot.style.display = 'none';
 
 cards.push(
@@ -152,18 +153,34 @@ function playAudio(audio){
   etiquetaAudio.play();
 }
 
+function playAudioReiniciar(){
+  etiquetaAudio.pause();
+  etiquetaAudio.setAttribute("src", '../audios/fx/shuffle_cards.mp3');
+  etiquetaAudio.play();
+}
+
 function rebootPage(){
-    location.reload();
+  playAudioReiniciar();
+  setTimeout(function(){
+      location.reload();
+  },200);
 }
 
 function startRandom() {
   if(cards[count] === undefined){
     carta.innerHTML = 'Las cartas se han terminado';
+
+    listCard.classList.remove('display-none');
+
     img.style.display = 'none';
     randomButton.style.display ='none';
     reboot.style.display = 'block';
   } else {
     //carta.innerHTML = cards[count].name;
+    const p = document.createElement('p');
+    p.innerHTML = `${count + 1}: ${cards[count].name}`;
+    listCard.appendChild(p);
+
     console.log(count);
     restantes--;
     carta.innerHTML = `Cartas restantes: ${restantes}`;
