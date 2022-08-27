@@ -88,11 +88,11 @@ button:hover{
   padding: 10px 40px;
 }
 
-@media (max-width: 480px){
-    .container{
-      height: auto;
-    }
+.height{
+  height: auto !important;
+}
 
+@media (max-width: 480px){
     .list-card{
       text-align: center;
       grid-template-columns: 1fr;

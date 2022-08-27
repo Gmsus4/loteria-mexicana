@@ -123,6 +123,7 @@ const carta = document.querySelector('.carta');
 const img = document.querySelector('.img');
 const reboot = document.querySelector('.reboot');
 const listCard = document.querySelector('.list-card');
+const height = document.querySelector('.container');
 reboot.style.display = 'none';
 
 cards.push(
@@ -171,6 +172,8 @@ function startRandom() {
     carta.innerHTML = 'Las cartas se han terminado';
 
     listCard.classList.remove('display-none');
+
+    height.classList.add('height');
 
     img.style.display = 'none';
     randomButton.style.display ='none';
