@@ -23,7 +23,6 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
 }
 
 .target{
@@ -86,10 +85,6 @@ button{
 
 button:hover{
   padding: 10px 40px;
-}
-
-.height{
-  height: auto !important;
 }
 
 @media (max-width: 480px){
